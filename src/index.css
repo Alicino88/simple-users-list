@@ -1,0 +1,10 @@
+/* colors from https://coolors.co/031926-468189-77aca2-9dbebb-f4e9cd*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  background: #031926;
+}

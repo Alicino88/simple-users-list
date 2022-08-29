@@ -1,4 +1,5 @@
 import AddUser from "./Components/AddUser";
+import "./index.css";
 
 function App() {
   return (
