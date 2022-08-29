@@ -7,6 +7,14 @@ function AddUser() {
   const [enteredAge, setEnteredAge] = useState("");
   const userSubmitHandler = (e) => {
     e.preventDefault();
+
+    if (enteredUsername.trim().length === 0 || enteredAge.trim().length === 0) {
+      return;
+    }
+    if (enteredAge < 1) {
+      return;
+    }
+    console.log("hello");
     console.log(enteredUsername, enteredAge);
     setEnteredUsername("");
     setEnteredAge("");
