@@ -2,7 +2,7 @@ import Card from "./UI/Card";
 import Button from "./UI/Button";
 import { useState } from "react";
 
-function AddUser() {
+function AddUser(props) {
   const [enteredUsername, setEnteredUsername] = useState("");
   const [enteredAge, setEnteredAge] = useState("");
   const userSubmitHandler = (e) => {
@@ -14,8 +14,9 @@ function AddUser() {
     if (enteredAge < 1) {
       return;
     }
-    console.log("hello");
-    console.log(enteredUsername, enteredAge);
+    /*console.log("hello");
+    console.log(enteredUsername, enteredAge);*/
+    props.onAddUsers(enteredUsername, enteredAge);
     setEnteredUsername("");
     setEnteredAge("");
   };
