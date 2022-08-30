@@ -17,7 +17,7 @@ function App() {
 
   console.log(usersList);
   return (
-    <div className="App">
+    <div>
       <AddUser onAddUsers={addUserHandler} />
       <UsersList users={usersList} />
     </div>
