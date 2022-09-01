@@ -1,6 +1,6 @@
 import Card from "./UI/Card";
 import Button from "./UI/Button";
-import { useState, Fragment } from "react";
+import { useState } from "react";
 import ErrorModal from "./UI/ErrorModal";
 import classes from "./AddUser.module.css";
 

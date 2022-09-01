@@ -1,6 +1,6 @@
 import AddUser from "./Components/AddUser";
 import UsersList from "./Components/UsersList";
-import { useState, Fragment } from "react";
+import { useState } from "react";
 import "./index.css";
 
 function App() {
