@@ -7,10 +7,15 @@ import classes from "./AddUser.module.css";
 
 function AddUser(props) {
   /*Below we have removed the useState logic and replaced with Refs: in this way we don't update the component state at every keystroke to store the actual value:
+    
   /*
   const [enteredUsername, setEnteredUsername] = useState("");
   const [enteredAge, setEnteredAge] = useState("");
   */
+
+  /*we apply the useRef hook to a constant. 
+  useRef hook creates an empty object that is bind to the actual jsx element by adding the "ref" property. 
+  We can then access the actual value when submitting the form (e.g nameInputRef.current.value = "")*/
   const nameInputRef = useRef();
   const ageInputRef = useRef();
 
